@@ -1,0 +1,272 @@
+2024-08-07T21:18:25+00:00 DEBUG POST Request to ws/public-keys with params: {
+    "type": "card"
+}
+array (
+)
+2024-08-07T21:18:25+00:00 DEBUG Response from ws/public-keys: {
+    "public_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtsTgcWN9p7uvix+H3Bk85A0pKB7yR1XzQCcDghjYLJMdK3DQQfplvcKXm\/EBAy+6nqjknna1QAgUbQhj8+nV0OABiY8PwbK9NS51AUXVu4Amo7GhsSLtbKJ+G5WaGIvedbzoiPyNTzniIoS+Xl4ctLp3+0BLQiwbySEzzKyesTO+5q1\/rEP1eSHdV5pjjNwtREZIBDRN2i0cCNsQB2kELf5CSPI8ci4QDLgKsTm48T4f0EjSIsSedqJPXQfBKVLQfpkQoFd8E92cxUooEHNBRJg+LWfk++aNKkPWaosSw3B68nXJemJOi7HTydFZ+nW16dbpokL4OG6+E6jFQn7v2QIDAQAB",
+    "created_at": 1721746728994
+}
+array (
+)
+2024-08-07T21:20:46+00:00 DEBUG POST Request to ws-sdk/checkout-sdk/sessions with params: []
+array (
+)
+2024-08-07T21:20:47+00:00 DEBUG Response from ws-sdk/checkout-sdk/sessions: {
+    "session": "eQQ9wPhyohbvmhUTQC2Z1KCmKJ1L2ipE+\/lOYQtGVpFmVl5xzZF64cQV\/8DBjcnCg6A9gepha\/seyd1gcdyRqeqaw6DAMCgGL2GXsNMbbja8RTewQqG7BOwY5mUncvsFNvMZAusE2DWAEFn99I4BQmpvGs6u2rEuvWvS0QOhGwsz3OWnlorMfVc7UbY3Q9qXH05sQPA3jUZAgEfzinjkkLhsRYtgCmQvIdRltDlbqytAvhYFpg0FT2Px47XyfZz2K6tEWlrHfKJaqFf4inXVxCOXY+Nw3rduM5JWmBVd2IPK+PJ6O4PMWVlQpnmnBLMt4OQLmKGJFhC2KFsUKyoDwA==",
+    "expires_at": 1723067447971
+}
+array (
+)
+2024-08-07T21:21:27+00:00 DEBUG Response from ws-sdk/checkout-sdk/sessions (cached): {
+    "session": "eQQ9wPhyohbvmhUTQC2Z1KCmKJ1L2ipE+\/lOYQtGVpFmVl5xzZF64cQV\/8DBjcnCg6A9gepha\/seyd1gcdyRqeqaw6DAMCgGL2GXsNMbbja8RTewQqG7BOwY5mUncvsFNvMZAusE2DWAEFn99I4BQmpvGs6u2rEuvWvS0QOhGwsz3OWnlorMfVc7UbY3Q9qXH05sQPA3jUZAgEfzinjkkLhsRYtgCmQvIdRltDlbqytAvhYFpg0FT2Px47XyfZz2K6tEWlrHfKJaqFf4inXVxCOXY+Nw3rduM5JWmBVd2IPK+PJ6O4PMWVlQpnmnBLMt4OQLmKGJFhC2KFsUKyoDwA==",
+    "expires_at": 1723067447971
+}
+array (
+)
+2024-08-07T21:23:17+00:00 DEBUG Response from ws-sdk/checkout-sdk/sessions (cached): {
+    "session": "eQQ9wPhyohbvmhUTQC2Z1KCmKJ1L2ipE+\/lOYQtGVpFmVl5xzZF64cQV\/8DBjcnCg6A9gepha\/seyd1gcdyRqeqaw6DAMCgGL2GXsNMbbja8RTewQqG7BOwY5mUncvsFNvMZAusE2DWAEFn99I4BQmpvGs6u2rEuvWvS0QOhGwsz3OWnlorMfVc7UbY3Q9qXH05sQPA3jUZAgEfzinjkkLhsRYtgCmQvIdRltDlbqytAvhYFpg0FT2Px47XyfZz2K6tEWlrHfKJaqFf4inXVxCOXY+Nw3rduM5JWmBVd2IPK+PJ6O4PMWVlQpnmnBLMt4OQLmKGJFhC2KFsUKyoDwA==",
+    "expires_at": 1723067447971
+}
+array (
+)
+2024-08-07T21:24:33+00:00 DEBUG POST Request to ws/orders with params: {
+    "reference_id": 32,
+    "customer": {
+        "name": "wermeson soares",
+        "email": "wermeson.blucomet@gmail.com",
+        "tax_id": "",
+        "phone": [
+            {
+                "country": 55,
+                "area": 55,
+                "number": 985892221,
+                "type": "MOBILE"
+            }
+        ]
+    },
+    "items": [
+        {
+            "reference_id": "24",
+            "name": "teste",
+            "quantity": 1,
+            "unit_amount": 100
+        }
+    ],
+    "notification_urls": [
+        "http:\/\/localhost\/projeto\/pradosdb04\/?wc-api=rm_ps_notif&hash=b3d27"
+    ],
+    "qr_codes": [
+        {
+            "amount": {
+                "value": 100,
+                "currency": "BRL"
+            },
+            "expiration_date": "2024-08-08T21:24:33+00:00"
+        }
+    ]
+}
+array (
+)
+2024-08-07T21:24:34+00:00 DEBUG Response from ws/orders: {
+    "error_messages": [
+        {
+            "code": "40002",
+            "description": "invalid notification url",
+            "parameter_name": "notification_urls[0]"
+        },
+        {
+            "code": "40002",
+            "description": "must be a valid CPF or CNPJ",
+            "parameter_name": "customer.tax_id"
+        }
+    ]
+}
+array (
+)
+2024-08-07T21:24:34+00:00 ERROR Erro Connect: 40002 - invalid notification url (notification_urls[0]), 40002 - must be a valid CPF or CNPJ (customer.tax_id)
+array (
+)
+2024-08-07T21:26:43+00:00 DEBUG POST Request to ws-sdk/checkout-sdk/sessions with params: []
+array (
+)
+2024-08-07T21:26:43+00:00 DEBUG Response from ws-sdk/checkout-sdk/sessions: {
+    "session": "OoYC5PAEL6V85BCzvfIX+NlWaOSt\/Ia6YZxqatjj31QmSJbz1rgvbi5J3hLhrmVG12M2gq8TPYo5xEzHMh6OMd6eiqbXd8vOhHaEIt+kuwHK6ImOKJmpAt\/wjsCxxbIyUth5tRgYHeqBVdUTMxjEIZMlsU6OkZSlDVIVwFBcy7W7WHkRn1FDPYjkKg6Iy5Twy6vaz0+Riss0BeXgUOA++k\/FSbhMuoJrfr43Q1UV7wL+tbC7DRBKUrYzeN6yhITOy7RupIZq0yCwqqxObpuQtHTMu\/+3jtVvTuIxVhpkBoSpQm9PIJVvOf7lJbRa9Fk66tAVq69K68D9T5zP9aGOpg==",
+    "expires_at": 1723067804339
+}
+array (
+)
+2024-08-07T21:27:06+00:00 DEBUG Response from ws-sdk/checkout-sdk/sessions (cached): {
+    "session": "OoYC5PAEL6V85BCzvfIX+NlWaOSt\/Ia6YZxqatjj31QmSJbz1rgvbi5J3hLhrmVG12M2gq8TPYo5xEzHMh6OMd6eiqbXd8vOhHaEIt+kuwHK6ImOKJmpAt\/wjsCxxbIyUth5tRgYHeqBVdUTMxjEIZMlsU6OkZSlDVIVwFBcy7W7WHkRn1FDPYjkKg6Iy5Twy6vaz0+Riss0BeXgUOA++k\/FSbhMuoJrfr43Q1UV7wL+tbC7DRBKUrYzeN6yhITOy7RupIZq0yCwqqxObpuQtHTMu\/+3jtVvTuIxVhpkBoSpQm9PIJVvOf7lJbRa9Fk66tAVq69K68D9T5zP9aGOpg==",
+    "expires_at": 1723067804339
+}
+array (
+)
+2024-08-07T21:27:25+00:00 DEBUG POST Request to ws/orders with params: {
+    "reference_id": 32,
+    "customer": {
+        "name": "wermeson soares",
+        "email": "wermeson.blucomet@gmail.com",
+        "tax_id": "06814984393",
+        "phone": [
+            {
+                "country": 55,
+                "area": 55,
+                "number": 985892221,
+                "type": "MOBILE"
+            }
+        ]
+    },
+    "items": [
+        {
+            "reference_id": "24",
+            "name": "teste",
+            "quantity": 1,
+            "unit_amount": 100
+        }
+    ],
+    "notification_urls": [
+        "http:\/\/localhost\/projeto\/pradosdb04\/?wc-api=rm_ps_notif&hash=b3d27"
+    ],
+    "qr_codes": [
+        {
+            "amount": {
+                "value": 100,
+                "currency": "BRL"
+            },
+            "expiration_date": "2024-08-08T21:27:25+00:00"
+        }
+    ]
+}
+array (
+)
+2024-08-07T21:27:25+00:00 DEBUG Response from ws/orders: {
+    "error_messages": [
+        {
+            "code": "40002",
+            "description": "invalid notification url",
+            "parameter_name": "notification_urls[0]"
+        }
+    ]
+}
+array (
+)
+2024-08-07T21:27:25+00:00 ERROR Erro Connect: 40002 - invalid notification url (notification_urls[0])
+array (
+)
+2024-08-07T21:29:05+00:00 DEBUG Response from ws-sdk/checkout-sdk/sessions (cached): {
+    "session": "OoYC5PAEL6V85BCzvfIX+NlWaOSt\/Ia6YZxqatjj31QmSJbz1rgvbi5J3hLhrmVG12M2gq8TPYo5xEzHMh6OMd6eiqbXd8vOhHaEIt+kuwHK6ImOKJmpAt\/wjsCxxbIyUth5tRgYHeqBVdUTMxjEIZMlsU6OkZSlDVIVwFBcy7W7WHkRn1FDPYjkKg6Iy5Twy6vaz0+Riss0BeXgUOA++k\/FSbhMuoJrfr43Q1UV7wL+tbC7DRBKUrYzeN6yhITOy7RupIZq0yCwqqxObpuQtHTMu\/+3jtVvTuIxVhpkBoSpQm9PIJVvOf7lJbRa9Fk66tAVq69K68D9T5zP9aGOpg==",
+    "expires_at": 1723067804339
+}
+array (
+)
+2024-08-07T21:29:30+00:00 DEBUG Response from ws-sdk/checkout-sdk/sessions (cached): {
+    "session": "OoYC5PAEL6V85BCzvfIX+NlWaOSt\/Ia6YZxqatjj31QmSJbz1rgvbi5J3hLhrmVG12M2gq8TPYo5xEzHMh6OMd6eiqbXd8vOhHaEIt+kuwHK6ImOKJmpAt\/wjsCxxbIyUth5tRgYHeqBVdUTMxjEIZMlsU6OkZSlDVIVwFBcy7W7WHkRn1FDPYjkKg6Iy5Twy6vaz0+Riss0BeXgUOA++k\/FSbhMuoJrfr43Q1UV7wL+tbC7DRBKUrYzeN6yhITOy7RupIZq0yCwqqxObpuQtHTMu\/+3jtVvTuIxVhpkBoSpQm9PIJVvOf7lJbRa9Fk66tAVq69K68D9T5zP9aGOpg==",
+    "expires_at": 1723067804339
+}
+array (
+)
+2024-08-07T21:29:40+00:00 DEBUG POST Request to ws/orders with params: {
+    "reference_id": 37,
+    "customer": {
+        "name": "wermeson soares",
+        "email": "wermeson.blucomet@gmail.com",
+        "tax_id": "06814984393",
+        "phone": [
+            {
+                "country": 55,
+                "area": 55,
+                "number": 985892221,
+                "type": "MOBILE"
+            }
+        ]
+    },
+    "items": [
+        {
+            "reference_id": "35",
+            "name": "teste",
+            "quantity": 1,
+            "unit_amount": 100
+        }
+    ],
+    "notification_urls": [
+        "http:\/\/localhost\/projeto\/pradosdb04\/?wc-api=rm_ps_notif&hash=8d8ce"
+    ],
+    "qr_codes": [
+        {
+            "amount": {
+                "value": 100,
+                "currency": "BRL"
+            },
+            "expiration_date": "2024-08-08T21:29:40+00:00"
+        }
+    ]
+}
+array (
+)
+2024-08-07T21:29:41+00:00 DEBUG Response from ws/orders: {
+    "error_messages": [
+        {
+            "code": "40002",
+            "description": "invalid notification url",
+            "parameter_name": "notification_urls[0]"
+        }
+    ]
+}
+array (
+)
+2024-08-07T21:29:41+00:00 ERROR Erro Connect: 40002 - invalid notification url (notification_urls[0])
+array (
+)
+2024-08-07T21:30:34+00:00 DEBUG POST Request to ws/orders with params: {
+    "reference_id": 37,
+    "customer": {
+        "name": "wermeson soares",
+        "email": "wermeson.blucomet@gmail.com",
+        "tax_id": "06814984393",
+        "phone": [
+            {
+                "country": 55,
+                "area": 55,
+                "number": 985892221,
+                "type": "MOBILE"
+            }
+        ]
+    },
+    "items": [
+        {
+            "reference_id": "35",
+            "name": "teste",
+            "quantity": 1,
+            "unit_amount": 100
+        }
+    ],
+    "notification_urls": [
+        "http:\/\/localhost\/projeto\/pradosdb04\/?wc-api=rm_ps_notif&hash=8d8ce"
+    ],
+    "qr_codes": [
+        {
+            "amount": {
+                "value": 100,
+                "currency": "BRL"
+            },
+            "expiration_date": "2024-08-08T21:30:34+00:00"
+        }
+    ]
+}
+array (
+)
+2024-08-07T21:30:34+00:00 DEBUG Response from ws/orders: {
+    "error_messages": [
+        {
+            "code": "40002",
+            "description": "invalid notification url",
+            "parameter_name": "notification_urls[0]"
+        }
+    ]
+}
+array (
+)
+2024-08-07T21:30:34+00:00 ERROR Erro Connect: 40002 - invalid notification url (notification_urls[0])
+array (
+)
